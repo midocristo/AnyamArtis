@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AnyamArtis</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="index.html">Anyam<span>Artis</span></a>
+    <ul class="nav-list">
+      <li><a href="#foryou">For You</a></li>
+      <li><a href="#promo">Promo</a></li>
+      <li><a href="#etalase">Etalase</a></li>
+      <li><a href="#ranking">Ranking</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#request">Request</a></li>
+    </ul>
+
+    <div class="nav-main">
+      <button class="nav-search-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>  
+      </button>
+      <button class="login-btn">Masuk</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-label">
+        Pasar Pengrajin Lokal Indonesia
+      </div>
+      <div class="hero-tagline">
+        <h1>Where Every<br><em>Craft</em> Tells<br>a Story</h1>
+        <p class="hero-sub">Temukan produk buatan tangan dari pengrajin lokal — setiap karya membawa tradisi, makna, dan kasih yang nyata.</p>
+      </div>
+      <div class="hero-btn">
+        <button class="hero-btn-etalase">Jelajah Etalase</button>
+        <button class="hero-btn-request">Request Custom Produk</button>
+      </div>
+    </div>
+  </section>
+  
+  <section class="value">
+    <div class="value-box">
+      <i class="fa-solid fa-leaf" style="color: hsl(96, 12%, 49%);"></i>
+      <div class="value-title">Sustainable</div>
+      <div class="value-text">Bahan yang ramah lingkungan</div>
+    </div>
+    <div class="value-box">
+      <i class="fa-solid fa-palette" style="color: hsl(96, 12%, 49%);"></i>
+      <div class="value-title">Story-Driven</div>
+      <div class="value-text">Setiap produk punya ceritanya</div>
+    </div>
+    <div class="value-box">
+      <i class="fa-solid fa-handshake" style="color: hsl(96, 12%, 49%);"></i>
+      <div class="value-title">Direct Support</div>
+      <div class="value-text">Langsung ke tangan pengrajin</div>
+    </div>
+    <div class="value-box">
+      <i class="fa-solid fa-circle-question" style="color: hsl(96, 12%, 49%);"></i>
+      <div class="value-title">Custom Request</div>
+      <div class="value-text">Pesan sesuai kebutuhanmu</div>
+    </div>
+  </section>
+
+  <section class="discount-page">
+    <div class="discount-card">
+      <div class="discount-left">
+        <div class="discount-label">
+          Limited Event!
+        </div>
+        <div class="discount-text">
+          <h1>National Batik Day Special</h1>
+          <p>Rayakan seni Batik yang diakui UNESCO dengan koleksi eksklusif dari pengrajin master kami. Produk terbatas, cerita tak terbatas.</p>
+        </div>
+        <div class="discount-btn-container">
+          <button class="discount-btn">Jelajahi Koleksi</button>
+        </div>
+      </div>
+      <div class="discount-image">
+        <img src="Image/Batik.png">
+        <!-- Sumber foto = https://www.theungasan.com/blog/batik-design-the-traditions-and-beauty-of-the-indonesian-dye-technique/ -->
+      </div>
+      <div class="discount-overlay"></div>
+    </div>
+  </section>
+
+  <section class="etalase">
+
+    <div class="etalase-top">
+      <div>
+        <h2>Etalase Produk</h2>
+        <h1>For You</h1>
+      </div>
+      <a class="see-all" href="#">Lihat Semua Produk</a>
+    </div>
+  
+    <div class="filter-bar">
+      <div class="filter-tab-container">
+        <button class="filter-tab active">Semua</button>
+        <button class="filter-tab">Anyam</button>
+        <button class="filter-tab">Batik</button>
+        <button class="filter-tab">Perhiasan</button>
+      </div>
+    </div>
+
+    <div class="product-grid" id="product-grid">
+
+      <div class="pcard" data-category="anyam" id="card-1">
+
+        <div class="pcard-artis-bar">
+          <div class="pcard-artis-left">
+            <img src="Image/artis_1.png" class="artis-profile">
+            <p>Widhi Wirawan</p>
+          </div>
+          <button class="follow-btn"><i class="fa-solid fa-user-plus" style="color: rgb(120, 103, 85);"></i></button>
+        </div>
+
+        <div class="pcard-img">
+          <img src="Image/tas_anyam.png" class="product-image">
+        </div>
+        
+        <div class="pcard-name-action">
+          <div class="pcard-name">
+            <h1>Tas Anyam</h1>
+          </div>
+          <div class="pcard-action">
+            <button class="cart-btn">
+              <i class="fa-solid fa-cart-shopping" style="color: rgb(120, 103, 85);"></i>
+            </button>
+            <button class="like-btn">
+              <i class="fa-regular fa-heart" style="color: rgb(120, 103, 85);"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="pcard-bottom">
+          <div class="ptag tag-anyam">
+            Anyam
+          </div>
+          <div class="pprice-rate">
+            <p>Rp. 100.000</p>
+            <div class="prating">
+              <i class="fa-solid fa-star" style="color: rgb(120, 103, 85);"></i>
+              <p>3.5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-category="batik" id="card-2">
+
+        <div class="pcard-artis-bar">
+          <div class="pcard-artis-left">
+            <img src="Image/artis_1.png" class="artis-profile">
+            <p>Widhi Wirawan</p>
+          </div>
+          <button class="follow-btn"><i class="fa-solid fa-user-plus" style="color: rgb(120, 103, 85);"></i></button>
+        </div>
+
+        <div class="pcard-img">
+          <img src="Image/tas_anyam.png" class="product-image">
+        </div>
+        
+        <div class="pcard-name-action">
+          <div class="pcard-name">
+            <h1>Batik Megamandi</h1>
+          </div>
+          <div class="pcard-action">
+            <button class="cart-btn">
+              <i class="fa-solid fa-cart-shopping" style="color: rgb(120, 103, 85);"></i>
+            </button>
+            <button class="like-btn">
+              <i class="fa-regular fa-heart" style="color: rgb(120, 103, 85);"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="pcard-bottom">
+          <div class="ptag tag-batik">
+            Batik
+          </div>
+          <div class="pprice-rate">
+            <p>Rp. 100.000</p>
+            <div class="prating">
+              <i class="fa-solid fa-star" style="color: rgb(120, 103, 85);"></i>
+              <p>3.5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-category="perhiasan" id="card-3">
+
+        <div class="pcard-artis-bar">
+          <div class="pcard-artis-left">
+            <img src="Image/artis_1.png" class="artis-profile">
+            <p>Widhi Wirawan</p>
+          </div>
+          <button class="follow-btn"><i class="fa-solid fa-user-plus" style="color: rgb(120, 103, 85);"></i></button>
+        </div>
+
+        <div class="pcard-img">
+          <img src="Image/tas_anyam.png" class="product-image">
+        </div>
+        
+        <div class="pcard-name-action">
+          <div class="pcard-name">
+            <h1>Kalung Kerang</h1>
+          </div>
+          <div class="pcard-action">
+            <button class="cart-btn">
+              <i class="fa-solid fa-cart-shopping" style="color: rgb(120, 103, 85);"></i>
+            </button>
+            <button class="like-btn">
+              <i class="fa-regular fa-heart" style="color: rgb(120, 103, 85);"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="pcard-bottom">
+          <div class="ptag tag-perhiasan">
+            Perhiasan
+          </div>
+          <div class="pprice-rate">
+            <p>Rp. 100.000</p>
+            <div class="prating">
+              <i class="fa-solid fa-star" style="color: rgb(120, 103, 85);"></i>
+              <p>3.5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-category="anyam" id="card-4">
+
+        <div class="pcard-artis-bar">
+          <div class="pcard-artis-left">
+            <img src="Image/artis_1.png" class="artis-profile">
+            <p>Widhi Wirawan</p>
+          </div>
+          <button class="follow-btn"><i class="fa-solid fa-user-plus" style="color: rgb(120, 103, 85);"></i></button>
+        </div>
+
+        <div class="pcard-img">
+          <img src="Image/tas_anyam.png" class="product-image">
+        </div>
+        
+        <div class="pcard-name-action">
+          <div class="pcard-name">
+            <h1>tas rajut</h1>
+          </div>
+          <div class="pcard-action">
+            <button class="cart-btn">
+              <i class="fa-solid fa-cart-shopping" style="color: rgb(120, 103, 85);"></i>
+            </button>
+            <button class="like-btn">
+              <i class="fa-regular fa-heart" style="color: rgb(120, 103, 85);"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="pcard-bottom">
+          <div class="ptag tag-anyam">
+            Anyam
+          </div>
+          <div class="pprice-rate">
+            <p>Rp. 100.000</p>
+            <div class="prating">
+              <i class="fa-solid fa-star" style="color: rgb(120, 103, 85);"></i>
+              <p>3.5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-category="anyam" id="card-5">
+
+        <div class="pcard-artis-bar">
+          <div class="pcard-artis-left">
+            <img src="Image/artis_1.png" class="artis-profile">
+            <p>Widhi Wirawan</p>
+          </div>
+          <button class="follow-btn"><i class="fa-solid fa-user-plus" style="color: rgb(120, 103, 85);"></i></button>
+        </div>
+
+        <div class="pcard-img">
+          <img src="Image/tas_anyam.png" class="product-image">
+        </div>
+        
+        <div class="pcard-name-action">
+          <div class="pcard-name">
+            <h1>tas rajut</h1>
+          </div>
+          <div class="pcard-action">
+            <button class="cart-btn">
+              <i class="fa-solid fa-cart-shopping" style="color: rgb(120, 103, 85);"></i>
+            </button>
+            <button class="like-btn">
+              <i class="fa-regular fa-heart" style="color: rgb(120, 103, 85);"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="pcard-bottom">
+          <div class="ptag tag-anyam">
+            Anyam
+          </div>
+          <div class="pprice-rate">
+            <p>Rp. 100.000</p>
+            <div class="prating">
+              <i class="fa-solid fa-star" style="color: rgb(120, 103, 85);"></i>
+              <p>3.5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-category="anyam" id="card-6">
+
+        <div class="pcard-artis-bar">
+          <div class="pcard-artis-left">
+            <img src="Image/artis_1.png" class="artis-profile">
+            <p>Widhi Wirawan</p>
+          </div>
+          <button class="follow-btn"><i class="fa-solid fa-user-plus" style="color: rgb(120, 103, 85);"></i></button>
+        </div>
+
+        <div class="pcard-img">
+          <img src="Image/tas_anyam.png" class="product-image">
+        </div>
+        
+        <div class="pcard-name-action">
+          <div class="pcard-name">
+            <h1>tas rajut</h1>
+          </div>
+          <div class="pcard-action">
+            <button class="cart-btn">
+              <i class="fa-solid fa-cart-shopping" style="color: rgb(120, 103, 85);"></i>
+            </button>
+            <button class="like-btn">
+              <i class="fa-regular fa-heart" style="color: rgb(120, 103, 85);"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="pcard-bottom">
+          <div class="ptag tag-anyam">
+            Anyam
+          </div>
+          <div class="pprice-rate">
+            <p>Rp. 100.000</p>
+            <div class="prating">
+              <i class="fa-solid fa-star" style="color: rgb(120, 103, 85);"></i>
+              <p>3.5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-category="anyam" id="card-7">
+
+        <div class="pcard-artis-bar">
+          <div class="pcard-artis-left">
+            <img src="Image/artis_1.png" class="artis-profile">
+            <p>Widhi Wirawan</p>
+          </div>
+          <button class="follow-btn"><i class="fa-solid fa-user-plus" style="color: rgb(120, 103, 85);"></i></button>
+        </div>
+
+        <div class="pcard-img">
+          <img src="Image/tas_anyam.png" class="product-image">
+        </div>
+        
+        <div class="pcard-name-action">
+          <div class="pcard-name">
+            <h1>tas rajut</h1>
+          </div>
+          <div class="pcard-action">
+            <button class="cart-btn">
+              <i class="fa-solid fa-cart-shopping" style="color: rgb(120, 103, 85);"></i>
+            </button>
+            <button class="like-btn">
+              <i class="fa-regular fa-heart" style="color: rgb(120, 103, 85);"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="pcard-bottom">
+          <div class="ptag tag-anyam">
+            Anyam
+          </div>
+          <div class="pprice-rate">
+            <p>Rp. 100.000</p>
+            <div class="prating">
+              <i class="fa-solid fa-star" style="color: rgb(120, 103, 85);"></i>
+              <p>3.5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" data-category="anyam" id="card-8">
+
+        <div class="pcard-artis-bar">
+          <div class="pcard-artis-left">
+            <img src="Image/artis_1.png" class="artis-profile">
+            <p>Widhi Wirawan</p>
+          </div>
+          <button class="follow-btn"><i class="fa-solid fa-user-plus" style="color: rgb(120, 103, 85);"></i></button>
+        </div>
+
+        <div class="pcard-img">
+          <img src="Image/tas_anyam.png" class="product-image">
+        </div>
+        
+        <div class="pcard-name-action">
+          <div class="pcard-name">
+            <h1>tas rajut</h1>
+          </div>
+          <div class="pcard-action">
+            <button class="cart-btn">
+              <i class="fa-solid fa-cart-shopping" style="color: rgb(120, 103, 85);"></i>
+            </button>
+            <button class="like-btn">
+              <i class="fa-regular fa-heart" style="color: rgb(120, 103, 85);"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="pcard-bottom">
+          <div class="ptag tag-anyam">
+            Anyam
+          </div>
+          <div class="pprice-rate">
+            <p>Rp. 100.000</p>
+            <div class="prating">
+              <i class="fa-solid fa-star" style="color: rgb(120, 103, 85);"></i>
+              <p>3.5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="load-more">
+      <button class="load-more-btn">
+        Tampilkan Lebih Banyak
+      </button>
+    </div>
+  </section>
+
+  <section class="video-promo">
+
+    <div class="video-promo-header">
+      <div>
+        <div class="video-promo-label">Behind the Craft</div>
+        <h2 class="video-promo-title">Lihat Prosesnya<br>Langsung</h2>
+      </div>
+    </div>
+
+  <div class="video-scroll">
+
+    <div class="video-row">
+      <a class="video-card" href="https://youtu.be/7-WQ3DKKn0w?si=iv2i9wVYSozUJfYm" target="_blank">
+        <div class="video-thumbnail">
+          <img src="https://i3.ytimg.com/vi/7-WQ3DKKn0w/hqdefault.jpg" alt="Video 1" />
+          <!--Video dari kanal youtube Ngerti Batik Indonesia berujudl "Proses dan Cara Membuat Batik Tutorial - #NgertiBatik"-->
+          <div class="play-overlay">
+            <div class="play-btn"> <i class="fa-solid fa-circle-play" style="color: rgb(120, 103, 85);"></i> </div>
+          </div>
+          <div class="duration">4:02</div>
+        </div>
+        <div class="video-body">
+          <div class="video-category">Batik</div>
+          <div class="video-title">The Process of Making Batik</div>
+          <div class="video-detail">Ngerti Batik Indonesia · 12.4k tayangan</div>
+        </div>
+      </a>
+
+      <a class="video-card" href="https://youtu.be/7-WQ3DKKn0w?si=iv2i9wVYSozUJfYm" target="_blank">
+        <div class="video-thumbnail">
+          <img src="https://i3.ytimg.com/vi/7-WQ3DKKn0w/hqdefault.jpg" alt="Video 2" />
+          <!--Video dari kanal youtube Ngerti Batik Indonesia berujudl "Proses dan Cara Membuat Batik Tutorial - #NgertiBatik"-->
+          <div class="play-overlay">
+            <div class="play-btn"> <i class="fa-solid fa-circle-play" style="color: rgb(120, 103, 85);"></i> </div>
+          </div>
+          <div class="duration">4:02</div>
+        </div>
+        <div class="video-body">
+          <div class="video-category">Batik</div>
+          <div class="video-title">The Process of Making Batik</div>
+          <div class="video-detail">Ngerti Batik Indonesia · 12.4k tayangan</div>
+        </div>
+      </a>
+
+      <a class="video-card" href="https://youtu.be/7-WQ3DKKn0w?si=iv2i9wVYSozUJfYm" target="_blank">
+        <div class="video-thumbnail">
+          <img src="https://i3.ytimg.com/vi/7-WQ3DKKn0w/hqdefault.jpg" alt="Video 3" />
+          <!--Video dari kanal youtube Ngerti Batik Indonesia berujudl "Proses dan Cara Membuat Batik Tutorial - #NgertiBatik"-->
+          <div class="play-overlay">
+            <div class="play-btn"> <i class="fa-solid fa-circle-play" style="color: rgb(120, 103, 85);"></i> </div>
+          </div>
+          <div class="duration">4:02</div>
+        </div>
+        <div class="video-body">
+          <div class="video-category">Batik</div>
+          <div class="video-title">The Process of Making Batik</div>
+          <div class="video-detail">Ngerti Batik Indonesia · 12.4k tayangan</div>
+        </div>
+      </a>
+
+      <a class="video-card" href="https://youtu.be/7-WQ3DKKn0w?si=iv2i9wVYSozUJfYm" target="_blank">
+        <div class="video-thumbnail">
+          <img src="https://i3.ytimg.com/vi/7-WQ3DKKn0w/hqdefault.jpg" alt="Video 4" />
+          <!--Video dari kanal youtube Ngerti Batik Indonesia berujudl "Proses dan Cara Membuat Batik Tutorial - #NgertiBatik"-->
+          <div class="play-overlay">
+            <div class="play-btn"> <i class="fa-solid fa-circle-play" style="color: rgb(120, 103, 85);"></i> </div>
+          </div>
+          <div class="duration">4:02</div>
+        </div>
+        <div class="video-body">
+          <div class="video-category">Batik</div>
+          <div class="video-title">The Process of Making Batik</div>
+          <div class="video-detail">Ngerti Batik Indonesia · 12.4k tayangan</div>
+        </div>
+      </a>
+    </div>
+
+  </section>
+
+  <section class="artis-rank">
+    <div class="artis-rank-header">
+      <div class="artis-rank-label">LEADERBOARD</div>
+      <h2> Rangking Pengrajin Terbaik </h2>
+    </div>
+    
+    <div class="artis-podium">
+
+      <div class="podium-card rank-2">
+        <div class="podium-photo"></div>
+        <div class="podium-num">2</div>
+        <div class="podium-name">Wirawan</div>
+        <div class="podium-detail">Batik · Bali</div>
+      </div>
+
+      <div class="podium-card rank-1">
+        <div class="podium-photo"><img src="Image/artis_1.png"></div>
+        <div class="podium-num">2</div>
+        <div class="podium-name">Wirawan</div>
+        <div class="podium-detail">Batik · Bali</div>
+      </div>
+
+      <div class="podium-card rank-3">
+        <div class="podium-photo"></div>
+        <div class="podium-num">2</div>
+        <div class="podium-name">Wirawan</div>
+        <div class="podium-detail">Batik · Bali</div>
+      </div>
+
+    </div>
+
+    <div class="artis-rangking">
+
+      <div class="rank-container">
+        <div class="rank-artis-num">1</div>
+        <div class="rank-artis-photo"></div>
+        <div class="rank-artis-info">
+          <h2>Wiwir</h2>
+          <p>Batak Tulas</p>
+        </div>
+        <div class="rank-artis-badge">Mythic</div>
+        <div class="rank-artis-ranking">
+          <i class="fa-solid fa-star" style="color: rgb(120, 103, 85);"></i>
+          <p>4.9</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
