@@ -647,53 +647,90 @@ nav{
   margin-bottom: 32px;
 }
 
-.artis-podium {
-  display: flex;
-  gap: 12px;
-  margin-bottom: 32px;
-  align-items: flex-end; 
-}
-.podium-card {
-  flex: 1;
-  max-width: 360px;      
-  background: var(--surface2);
+.artis-rangking {
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 16px;
   overflow: hidden;
-  text-align: center;
-}
-.podium-photo {
-  width: 100%;           
-  overflow: hidden;
 }
 
-.podium-photo img {
+.rank-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.rank-container:last-child {
+  border-bottom: none;
+}
+
+.rank-artis-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--ink-hint);
+  width: 28px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.rank-artis-photo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 2px solid var(--border);
+  background: var(--surface2);
+}
+
+.rank-artis-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-.podium-card.rank-1 .podium-photo { height: 160px; }
-.podium-card.rank-2 .podium-photo { height: 120px; }
-.podium-card.rank-3 .podium-photo { height: 90px;  }
-.podium-num {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 26px; font-weight: 600;
-  padding: 10px 0 4px;
-}
-.podium-card.rank-1.podium-photo{
-  height: 160px;
-}
-.podium-card.rank-2.podium-photo{
-  height: 140px;
-}
-.podium-name {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 16px; font-weight: 600; color: var(--espresso);
-  padding: 0 8px;
+
+.rank-artis-info {
+  flex: 1;
 }
 
-.podium-detail {
-  font-size: 11px; color: var(--ink-hint);
-  padding: 4px 8px 14px;
+.rank-artis-info h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--espresso);
+  margin-bottom: 2px;
+}
+
+.rank-artis-info p {
+  font-size: 11px;
+  color: var(--ink-muted);
+}
+
+.rank-artis-badge {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  background: var(--surface2);
+  color: var(--ink-mid);
+  border: 1px solid var(--border);
+}
+
+.rank-artis-ranking {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.rank-artis-ranking p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--forest);
 }
