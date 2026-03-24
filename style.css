@@ -1005,3 +1005,56 @@ nav{
   display: block;
   margin-top: 8px;
 }
+
+.footer {
+  background: var(--espresso);
+  font-family: 'Jost', sans-serif;
+  padding: 50px;
+  color: var(--linen);
+  border-top: 1px solid var(--ink-muted);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+.footer-logo a{
+  text-decoration: none;
+  color: var(--cream);
+}
+
+.footer-logo span {
+  color: var(--tan);
+}
+
+.footer h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer-row a {
+  display: block;
+  font-size: 13px;
+  color: inherit;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.footer a:hover {
+  color: var(--tan);
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 15px;
+}
